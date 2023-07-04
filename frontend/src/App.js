@@ -28,6 +28,7 @@ function App() {
 
   const handleSearchTextClick = async (searchText) => {
     try {
+      
       const response = await axios.get(
         `${URL}/results?search_text=${searchText}`
       );
